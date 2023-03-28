@@ -8,7 +8,7 @@
             <div class="relative flex-1">
               <span class="flex items-center px-2 py-1">{{ service.title }}</span>
               <div
-                class="absolute inset-y-0 -z-10 rounded-r"
+                class="absolute inset-y-0 -z-10 animate-grow-width rounded-r"
                 :class="idx === 0 ? 'bg-brandgreen-700' : 'bg-brandblue-700'"
                 :style="`width: ${servicesBarsLengths[idx]}%`"
               ></div>

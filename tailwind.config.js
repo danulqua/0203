@@ -38,6 +38,17 @@ module.exports = {
         branddark: {
           900: '#333333'
         }
+      },
+      transitionProperty: {
+        width: 'width'
+      },
+      animation: {
+        'grow-width': 'grow-width 1s ease-in-out forwards'
+      },
+      keyframes: {
+        'grow-width': {
+          '0%': { width: '0' }
+        }
       }
     }
   },
