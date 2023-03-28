@@ -2,7 +2,7 @@
   <li>
     <div class="flex items-center space-x-2">
       <h3 class="font-bold">{{ user }}</h3>
-      <span class="text-xs text-brandgray-400">{{ date }}</span>
+      <span class="text-xs text-brandgray-400">{{ formatDate(new Date(date)) }}</span>
     </div>
 
     <div
@@ -21,13 +21,15 @@
 </template>
 
 <script setup lang="ts">
+import { formatDate } from '@/utils/formatDate';
+
 defineProps({
   user: {
     type: String,
     required: true
   },
   date: {
-    type: String,
+    type: Date,
     required: true
   },
   text: {

@@ -7,6 +7,6 @@ export interface UserService {
 export interface Review {
   id: number;
   user: string;
-  date: string;
+  date: Date;
   text: string;
 }
