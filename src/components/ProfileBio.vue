@@ -1,7 +1,7 @@
 <template>
   <header class="relative">
     <div class="xs:ml-24">
-      <div class="pl-14 font-bold xs:pl-12">{{ fullName }}</div>
+      <h1 class="pl-14 font-bold xs:pl-12">{{ fullName }}</h1>
       <div class="mt-1 pl-14 text-xs text-brandgray-400 xs:pl-12">{{ position }}</div>
       <div class="mt-2 rounded border border-brandgray-200 bg-brandyellow-300 px-4 py-2 xs:pl-12">
         <pre class="font-sans text-sm">{{ description }}</pre>
