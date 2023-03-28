@@ -3,7 +3,11 @@
     <div class="flex items-center justify-between">
       <div class="flex items-center space-x-2">
         <h2 class="font-bold">Latest reviews</h2>
-        <a href="#all-reviews" class="text-brandblue-900 underline">All reviews</a>
+        <a
+          href="#all-reviews"
+          class="text-brandblue-900 underline outline-none ring-brandblue-900 ring-offset-1 focus:ring-2"
+          >All reviews</a
+        >
       </div>
       <div class="flex items-center space-x-4">
         <div class="flex items-center space-x-1">
@@ -17,7 +21,14 @@
       </div>
     </div>
 
-    <ul class="mt-3 space-y-4">
+    <TransitionGroup
+      tag="ul"
+      class="mt-3 space-y-4"
+      enter-active-class="transition-all ease-in-out duration-700"
+      leave-active-class="transition-all ease-in-out duration-700"
+      enter-from-class="-translate-x-10 opacity-0"
+      leave-to-class="-translate-x-10 opacity-0"
+    >
       <UserReview
         v-for="review in data"
         :key="review.id"
@@ -25,7 +36,7 @@
         :date="review.date"
         :text="review.text"
       />
-    </ul>
+    </TransitionGroup>
   </section>
 </template>
 
