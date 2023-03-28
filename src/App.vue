@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import ProfileBio from '@/components/ProfileBio.vue';
+import UserServices from '@/components/UserServices.vue';
 
-import { bio } from '@/data';
+import { bio, userServices } from '@/data';
 </script>
 
 <template>
@@ -12,5 +13,6 @@ import { bio } from '@/data';
       :description="bio.desciription"
       :avatar="bio.avatar"
     />
+    <UserServices :data="userServices" />
   </main>
 </template>

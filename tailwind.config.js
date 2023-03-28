@@ -6,6 +6,9 @@ module.exports = {
   content: ['./src/**/*.{html,js,ts,vue}'],
   theme: {
     extend: {
+      screens: {
+        xs: '460px'
+      },
       fontFamily: {
         sans: ['Arial', ...defaultTheme.fontFamily.sans],
         'pt-sans': ['PT Sans', ...defaultTheme.fontFamily.sans]
