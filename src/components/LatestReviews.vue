@@ -1,13 +1,14 @@
 <template>
-  <section class="my-4 text-sm">
+  <section class="my-6 text-sm">
     <div class="flex items-center justify-between">
       <div class="flex items-center space-x-2">
         <h2 class="font-bold">Latest reviews</h2>
         <a
           href="#all-reviews"
           class="text-brandblue-900 underline outline-none ring-brandblue-900 ring-offset-1 focus:ring-2"
-          >All reviews</a
         >
+          All reviews
+        </a>
       </div>
       <div class="flex items-center space-x-4">
         <div class="flex items-center space-x-1">

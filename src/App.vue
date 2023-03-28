@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import type { Review } from '@/data/types';
+import UIContainer from '@/components/ui/UIContainer.vue';
 import ProfileBio from '@/components/ProfileBio.vue';
 import UserServices from '@/components/UserServices.vue';
 import LatestReviews from '@/components/LatestReviews.vue';
@@ -47,15 +48,21 @@ const addReview = (reviewText: string) => {
 </script>
 
 <template>
-  <main class="mx-auto mt-4 max-w-[720px] px-4 text-branddark-900">
-    <ProfileBio
-      :full-name="bio.fullName"
-      :position="bio.position"
-      :description="bio.desciription"
-      :avatar="bio.avatar"
-    />
-    <UserServices :data="userServices" />
-    <LatestReviews :data="latestReviews" />
-    <AddReviewForm @add-review="addReview" />
+  <main class="mt-4 text-branddark-900">
+    <UIContainer>
+      <ProfileBio
+        :full-name="bio.fullName"
+        :position="bio.position"
+        :description="bio.desciription"
+        :avatar="bio.avatar"
+      />
+      <UserServices :data="userServices" />
+      <LatestReviews :data="latestReviews" />
+    </UIContainer>
+    <div class="bg-brandgray-100 py-8">
+      <UIContainer>
+        <AddReviewForm @add-review="addReview" />
+      </UIContainer>
+    </div>
   </main>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <form class="bg-brandgray-100 py-8" @submit.prevent="addReview(reviewText)">
+  <form @submit.prevent="addReview(reviewText)">
     <textarea
       id="text"
       ref="textareaRef"
