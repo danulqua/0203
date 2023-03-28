@@ -29,5 +29,9 @@ const addReview = (text: string) => {
   emit('add-review', text);
   reviewText.value = '';
   textareaRef.value?.blur();
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
 };
 </script>
