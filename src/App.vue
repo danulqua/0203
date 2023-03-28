@@ -6,7 +6,7 @@ import { bio, userServices } from '@/data';
 </script>
 
 <template>
-  <main class="text-branddark-900 mx-auto px-4 mt-4 max-w-[720px]">
+  <main class="mx-auto mt-4 max-w-[720px] px-4 text-branddark-900">
     <ProfileBio
       :full-name="bio.fullName"
       :position="bio.position"
